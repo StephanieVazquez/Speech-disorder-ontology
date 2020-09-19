@@ -1,0 +1,863 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/stephanie/ontologies/2018/9/untitled-ontology-22"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/stephanie/ontologies/2018/9/untitled-ontology-22">
+    <Prefix name="" IRI="http://www.semanticweb.org/stephanie/ontologies/2018/9/untitled-ontology-22"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Abnormal_Speed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Additional_Characteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Afonía"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Articulation_Disorder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disartría"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disfemia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disfonía"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disglosia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dislalia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Farfulleo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phoneme_Repetition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Problematic_Phoneme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rythm_and_Fluency_Disorder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Speech_Disorder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Voice_and_Resonance_Disorder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Voiced_Phoneme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Voiceless_Phoneme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vowel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Causes_Difficulty_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Has_Additional_Characteristic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Has_Difficulty_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Is_Add_Characteristic_of"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Tiene_característica"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Tiene_causa"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Tiene_grafema"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Tiene_nombre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Tiene_tratamiento"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_b"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_ch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_d"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_e"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_f"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_g"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_i"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_j"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_k"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_l"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_ll"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_m"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_n"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_o"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_p"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_r"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_rr"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_s"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_t"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_u"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_y"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_z"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phoneme_ñ"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Articulation_Disorder"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Speech_Disorder"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Has_Difficulty_with"/>
+                <Class IRI="#Voiced_Phoneme"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Has_Difficulty_with"/>
+                <Class IRI="#Voiceless_Phoneme"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Rythm_and_Fluency_Disorder"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Speech_Disorder"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Has_Additional_Characteristic"/>
+                <Class IRI="#Additional_Characteristic"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Has_Difficulty_with"/>
+                <Class IRI="#Voiceless_Phoneme"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Voice_and_Resonance_Disorder"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Speech_Disorder"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Has_Difficulty_with"/>
+                <Class IRI="#Vowel"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Abnormal_Speed"/>
+        <Class IRI="#Additional_Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Abnormal_Speed"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Is_Add_Characteristic_of"/>
+            <Class IRI="#Farfulleo"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Additional_Characteristic"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Is_Add_Characteristic_of"/>
+            <Class IRI="#Rythm_and_Fluency_Disorder"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Afonía"/>
+        <Class IRI="#Voice_and_Resonance_Disorder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disartría"/>
+        <Class IRI="#Articulation_Disorder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disfemia"/>
+        <Class IRI="#Rythm_and_Fluency_Disorder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disfemia"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Has_Additional_Characteristic"/>
+            <Class IRI="#Phoneme_Repetition"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disfonía"/>
+        <Class IRI="#Voice_and_Resonance_Disorder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disglosia"/>
+        <Class IRI="#Articulation_Disorder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dislalia"/>
+        <Class IRI="#Articulation_Disorder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Farfulleo"/>
+        <Class IRI="#Rythm_and_Fluency_Disorder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Farfulleo"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Has_Additional_Characteristic"/>
+            <Class IRI="#Abnormal_Speed"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Phoneme_Repetition"/>
+        <Class IRI="#Additional_Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Phoneme_Repetition"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Is_Add_Characteristic_of"/>
+            <Class IRI="#Disfemia"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Problematic_Phoneme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Causes_Difficulty_in"/>
+            <Class IRI="#Speech_Disorder"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Speech_Disorder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Has_Difficulty_with"/>
+            <Class IRI="#Problematic_Phoneme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Voiced_Phoneme"/>
+        <Class IRI="#Problematic_Phoneme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Voiced_Phoneme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Causes_Difficulty_in"/>
+            <Class IRI="#Articulation_Disorder"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Voiceless_Phoneme"/>
+        <Class IRI="#Problematic_Phoneme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Voiceless_Phoneme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Causes_Difficulty_in"/>
+            <Class IRI="#Articulation_Disorder"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Voiceless_Phoneme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Causes_Difficulty_in"/>
+            <Class IRI="#Rythm_and_Fluency_Disorder"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vowel"/>
+        <Class IRI="#Problematic_Phoneme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vowel"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Causes_Difficulty_in"/>
+            <Class IRI="#Voice_and_Resonance_Disorder"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Articulation_Disorder"/>
+        <Class IRI="#Rythm_and_Fluency_Disorder"/>
+        <Class IRI="#Voice_and_Resonance_Disorder"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Voiced_Phoneme"/>
+        <Class IRI="#Voiceless_Phoneme"/>
+        <Class IRI="#Vowel"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Vowel"/>
+        <NamedIndividual IRI="#Phoneme_a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voiced_Phoneme"/>
+        <NamedIndividual IRI="#Phoneme_b"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voiceless_Phoneme"/>
+        <NamedIndividual IRI="#Phoneme_ch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voiced_Phoneme"/>
+        <NamedIndividual IRI="#Phoneme_d"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vowel"/>
+        <NamedIndividual IRI="#Phoneme_e"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voiceless_Phoneme"/>
+        <NamedIndividual IRI="#Phoneme_f"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voiced_Phoneme"/>
+        <NamedIndividual IRI="#Phoneme_g"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vowel"/>
+        <NamedIndividual IRI="#Phoneme_i"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voiceless_Phoneme"/>
+        <NamedIndividual IRI="#Phoneme_j"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voiceless_Phoneme"/>
+        <NamedIndividual IRI="#Phoneme_k"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voiced_Phoneme"/>
+        <NamedIndividual IRI="#Phoneme_l"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voiced_Phoneme"/>
+        <NamedIndividual IRI="#Phoneme_ll"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voiced_Phoneme"/>
+        <NamedIndividual IRI="#Phoneme_m"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voiced_Phoneme"/>
+        <NamedIndividual IRI="#Phoneme_n"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vowel"/>
+        <NamedIndividual IRI="#Phoneme_o"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voiceless_Phoneme"/>
+        <NamedIndividual IRI="#Phoneme_p"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voiced_Phoneme"/>
+        <NamedIndividual IRI="#Phoneme_r"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voiced_Phoneme"/>
+        <NamedIndividual IRI="#Phoneme_rr"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voiceless_Phoneme"/>
+        <NamedIndividual IRI="#Phoneme_s"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voiceless_Phoneme"/>
+        <NamedIndividual IRI="#Phoneme_t"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vowel"/>
+        <NamedIndividual IRI="#Phoneme_u"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voiced_Phoneme"/>
+        <NamedIndividual IRI="#Phoneme_y"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voiceless_Phoneme"/>
+        <NamedIndividual IRI="#Phoneme_z"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voiced_Phoneme"/>
+        <NamedIndividual IRI="#Phoneme_ñ"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_a"/>
+        <Literal>mamá, ala</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_a"/>
+        <Literal>a</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_b"/>
+        <Literal>bobo, viva</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_b"/>
+        <Literal>b, v</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_nombre"/>
+        <NamedIndividual IRI="#Phoneme_b"/>
+        <Literal>Betacismo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_ch"/>
+        <Literal>cacho, bache</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_ch"/>
+        <Literal>ch</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_nombre"/>
+        <NamedIndividual IRI="#Phoneme_ch"/>
+        <Literal>Chuitismo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_d"/>
+        <Literal>dado, deuda</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_d"/>
+        <Literal>d</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_nombre"/>
+        <NamedIndividual IRI="#Phoneme_d"/>
+        <Literal>Deltacismo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_e"/>
+        <Literal>eco, tele</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_e"/>
+        <Literal>e</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_f"/>
+        <Literal>fan, afro</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_f"/>
+        <Literal>f</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_nombre"/>
+        <NamedIndividual IRI="#Phoneme_f"/>
+        <Literal>Ficismo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_g"/>
+        <Literal>higo, pague</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_g"/>
+        <Literal>g, gu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_nombre"/>
+        <NamedIndividual IRI="#Phoneme_g"/>
+        <Literal>Gammacismo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_i"/>
+        <Literal>así, muy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_i"/>
+        <Literal>i, y</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_j"/>
+        <Literal>gema, paja</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_j"/>
+        <Literal>g, j</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_nombre"/>
+        <NamedIndividual IRI="#Phoneme_j"/>
+        <Literal>Jotacismo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_k"/>
+        <Literal>coco, queso, kilo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_k"/>
+        <Literal>c, qu, k</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_nombre"/>
+        <NamedIndividual IRI="#Phoneme_k"/>
+        <Literal>Kappacismo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_l"/>
+        <Literal>l</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_l"/>
+        <Literal>muela, sol</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_nombre"/>
+        <NamedIndividual IRI="#Phoneme_l"/>
+        <Literal>Lambdacismo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_ll"/>
+        <Literal>olla, llama</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_ll"/>
+        <Literal>ll, y</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_nombre"/>
+        <NamedIndividual IRI="#Phoneme_ll"/>
+        <Literal>Yeísmo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_m"/>
+        <Literal>m</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_m"/>
+        <Literal>mamá, amo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_nombre"/>
+        <NamedIndividual IRI="#Phoneme_m"/>
+        <Literal>Mitacismo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_n"/>
+        <Literal>cana, ando</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_n"/>
+        <Literal>n</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_nombre"/>
+        <NamedIndividual IRI="#Phoneme_n"/>
+        <Literal>Numación</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_o"/>
+        <Literal>coco, ron</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_o"/>
+        <Literal>o</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_p"/>
+        <Literal>pipa, rap</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_p"/>
+        <Literal>p</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_nombre"/>
+        <NamedIndividual IRI="#Phoneme_p"/>
+        <Literal>Piscismo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_r"/>
+        <Literal>ira, coro</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_r"/>
+        <Literal>r</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_nombre"/>
+        <NamedIndividual IRI="#Phoneme_r"/>
+        <Literal>Rotacismo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_rr"/>
+        <Literal>río, carro, honra</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_rr"/>
+        <Literal>r, rr</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_nombre"/>
+        <NamedIndividual IRI="#Phoneme_rr"/>
+        <Literal>Rotacismo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_s"/>
+        <Literal>así, casa, uso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_s"/>
+        <Literal>s, c, z</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_nombre"/>
+        <NamedIndividual IRI="#Phoneme_s"/>
+        <Literal>Sigmatismo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_t"/>
+        <Literal>té, cata</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_t"/>
+        <Literal>t</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_nombre"/>
+        <NamedIndividual IRI="#Phoneme_t"/>
+        <Literal>Tetacismo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_u"/>
+        <Literal>cucú, ñu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_u"/>
+        <Literal>u</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_y"/>
+        <Literal>yate, mayonesa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_y"/>
+        <Literal>y</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_nombre"/>
+        <NamedIndividual IRI="#Phoneme_y"/>
+        <Literal>Yeísmo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_z"/>
+        <Literal>paz, raza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_z"/>
+        <Literal>z, c</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_nombre"/>
+        <NamedIndividual IRI="#Phoneme_z"/>
+        <Literal>Seseo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_ejemplo_de_uso"/>
+        <NamedIndividual IRI="#Phoneme_ñ"/>
+        <Literal>niña, uña</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_grafema"/>
+        <NamedIndividual IRI="#Phoneme_ñ"/>
+        <Literal>ñ</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tiene_nombre"/>
+        <NamedIndividual IRI="#Phoneme_ñ"/>
+        <Literal>Nuñación</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Causes_Difficulty_in"/>
+        <ObjectProperty IRI="#Has_Difficulty_with"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Has_Additional_Characteristic"/>
+        <ObjectProperty IRI="#Is_Add_Characteristic_of"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Is_Add_Characteristic_of"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Has_Additional_Characteristic"/>
+    </InverseFunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#Causes_Difficulty_in"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#Has_Additional_Characteristic"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#Has_Difficulty_with"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#Is_Add_Characteristic_of"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#Causes_Difficulty_in"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#Has_Additional_Characteristic"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#Has_Difficulty_with"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#Is_Add_Characteristic_of"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Causes_Difficulty_in"/>
+        <Class IRI="#Problematic_Phoneme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Has_Additional_Characteristic"/>
+        <Class IRI="#Rythm_and_Fluency_Disorder"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Has_Difficulty_with"/>
+        <Class IRI="#Speech_Disorder"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Is_Add_Characteristic_of"/>
+        <Class IRI="#Additional_Characteristic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Causes_Difficulty_in"/>
+        <Class IRI="#Speech_Disorder"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Additional_Characteristic"/>
+        <Class IRI="#Additional_Characteristic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Difficulty_with"/>
+        <Class IRI="#Problematic_Phoneme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Is_Add_Characteristic_of"/>
+        <Class IRI="#Rythm_and_Fluency_Disorder"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Tiene_nombre"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Phoneme_b</IRI>
+        <Literal>Betacismo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Voiceless_Phoneme</IRI>
+        <Literal>Fonema que no hace vibrar la cuerdas vocales</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
