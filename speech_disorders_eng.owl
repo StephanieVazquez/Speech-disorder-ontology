@@ -1,0 +1,1771 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Affects_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Affects_to">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Patient"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Speech_Disorder"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Suffers_a"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Applies_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Applies_a">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Therapist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Therapy_Strategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Evaluates_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Evaluates_a">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Assessment_Strategy"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_evaluated_by"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Speech_Disorder"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Gives_therapy_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Gives_therapy_to">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Patient"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Receives_therapy_from"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Therapist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Has_cause -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Has_cause">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Etiology"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_cause_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Speech_Disorder"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervenes_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervenes_a">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervention_Strategy"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_intervened_by"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Speech_Disorder"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_applied_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_applied_by">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Applies_a"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Therapist"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Therapy_Strategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_cause_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_cause_of">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Etiology"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Speech_Disorder"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_evaluated_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_evaluated_by">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Assessment_Strategy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Speech_Disorder"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_intervened_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_intervened_by">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervention_Strategy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Speech_Disorder"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_manifestation_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_manifestation_of">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Speech_Disorder"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_manifested_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_manifested_by">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_manifestation_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Speech_Disorder"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_shown_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_shown_by">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Patient"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Shows_a"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_treated_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_treated_by">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Speech_Disorder"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Therapist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Receives_therapy_from -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Receives_therapy_from">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Therapist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Shows_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Shows_a">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Suffers_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Suffers_a">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Speech_Disorder"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Treats_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Treats_a">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_treated_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Alteraciones_Conductuales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Alteraciones_Conductuales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Assessment_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Alteraciones_Lingüísticas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Alteraciones_Lingüísticas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Assessment_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Anamnesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Anamnesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Disorder_Assessment_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Antecedentes_Familiares -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Antecedentes_Familiares">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Assessment_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Aparato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Aparato">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Elementos_Auxiliares"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Aphonia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Aphonia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Disorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Aplicación_del_Sonido_Rítmico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Aplicación_del_Sonido_Rítmico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Modelo_Conductual_de_Evaluación_e_Intervención"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Articulation_Disorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Articulation_Disorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Speech_Disorder"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_manifested_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Articulation_Disorder_Symptom/Sign"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Articulation_Disorder_Assessment_Strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Articulation_Disorder_Assessment_Strategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Assessment_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Articulation_Disorder_Intervention_Strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Articulation_Disorder_Intervention_Strategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervention_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Articulation_Disorder_Symptom/Sign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Articulation_Disorder_Symptom/Sign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Aspecto_Motor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Aspecto_Motor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Exploración_Funcional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Assessment_Strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Assessment_Strategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Therapy_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Audiogenic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Audiogenic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dyslalia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Behavioural_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Behavioural_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dyslalia_Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Clonic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Clonic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphemia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Con_Referencia_Visual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Con_Referencia_Visual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Lenguaje_Dirigido"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Datos_Personales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Datos_Personales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Assessment_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dental -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dental">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dental_Dysglossia_Intervention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dental_Dysglossia_Intervention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia_Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Direct_Intervention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Direct_Intervention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Phonetic_Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Disartría_Atáxica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Disartría_Atáxica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysarthria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Disartría_Espástica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Disartría_Espástica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysarthria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Disartría_Flácida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Disartría_Flácida">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysarthria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Disartría_Por_lesiones -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Disartría_Por_lesiones">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysarthria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Disartía_Mixta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Disartía_Mixta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysarthria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Discriminación_Auditiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Discriminación_Auditiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Evaluación_de_la_Bases_Funcionales_de_la_Articulación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysarthria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysarthria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Organic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Organic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia_Assessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia_Assessment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Articulation_Disorder_Assessment_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia_Intervention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia_Intervention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Articulation_Disorder_Intervention_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dyslalia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dyslalia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Articulation_Disorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dyslalia_Assessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dyslalia_Assessment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Articulation_Disorder_Assessment_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dyslalia_Intervention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dyslalia_Intervention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Articulation_Disorder_Intervention_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphemia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphemia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Disorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia_Hipercinética/Hipertónica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia_Hipercinética/Hipertónica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Functional_Dysphonia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia_Hipocinética/Hipotónica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia_Hipocinética/Hipotónica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Functional_Dysphonia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia_Orgánica_Congénita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia_Orgánica_Congénita">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Organic_Dysphonia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia_Orgánica_Inflamatoria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia_Orgánica_Inflamatoria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Organic_Dysphonia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia_Orgánica_Traumática -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia_Orgánica_Traumática">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Organic_Dysphonia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Elementos_Auxiliares -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Elementos_Auxiliares">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Intervention_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Escalas_Abiertas_de_Valoración -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Escalas_Abiertas_de_Valoración">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Assessment_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Etiology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Etiology"/>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Evaluación_de_Respiración -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Evaluación_de_Respiración">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Evaluación_de_la_Bases_Funcionales_de_la_Articulación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Evaluación_de_la_Articulación -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Evaluación_de_la_Articulación">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dyslalia_Assessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Evaluación_de_la_Bases_Funcionales_de_la_Articulación -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Evaluación_de_la_Bases_Funcionales_de_la_Articulación">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dyslalia_Assessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Evolutive/Physiological -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Evolutive/Physiological">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dyslalia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Exploración_Funcional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Exploración_Funcional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Disorder_Assessment_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Fonación -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Fonación">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Exploración_Funcional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Fonastenia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Fonastenia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Laryngophonia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Functional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Functional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dyslalia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Functional_Dysphonia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Functional_Dysphonia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Functional_Etiology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Functional_Etiology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Etiology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Habilidad_Motora_de_Lengua,_Labios_y_Paladar_Blando -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Habilidad_Motora_de_Lengua,_Labios_y_Paladar_Blando">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Evaluación_de_la_Bases_Funcionales_de_la_Articulación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Hipercinéticas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Hipercinéticas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Disartría_Por_lesiones"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Hipocinéticas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Hipocinéticas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Disartría_Por_lesiones"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#IL_Fonación -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#IL_Fonación">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Logopédica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#IL_Relajación -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#IL_Relajación">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Logopédica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#IL_Respiración -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#IL_Respiración">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Logopédica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Imitación_Provocada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Imitación_Provocada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Evaluación_de_la_Articulación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Indirect_Intervention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Indirect_Intervention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Phonetic_Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Disfemia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Disfemia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Intervention_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Disfemia_Inicial_y_Episódica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Disfemia_Inicial_y_Episódica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Intervention_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Foniátrica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Foniátrica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Palatal_Dysglossia_Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Logopédica_Dental -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Logopédica_Dental">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dental_Dysglossia_Intervention"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Ortodóncica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Logopédica_Labial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Logopédica_Labial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Labial_Dysglossia_Intervention"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Quirúrgica_Labial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Logopédica_Lingual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Logopédica_Lingual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Lingual_Dysglossia_Intervention"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Quirúrgica_Lingual"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Logopédica_Mandibular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Logopédica_Mandibular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Mandibular_Dysglossia_Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Logopédica_Palatal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Logopédica_Palatal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Palatal_Dysglossia_Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Ortodóncica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Ortodóncica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dental_Dysglossia_Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Ortopédica-Ortodóncica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Ortopédica-Ortodóncica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Palatal_Dysglossia_Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Protésica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Protésica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Palatal_Dysglossia_Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Quirúrgica_Labial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Quirúrgica_Labial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Labial_Dysglossia_Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Quirúrgica_Lingual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Quirúrgica_Lingual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Lingual_Dysglossia_Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Quirúrgica_Palatal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Quirúrgica_Palatal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Palatal_Dysglossia_Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Quirúrgica_Plástica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Quirúrgica_Plástica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Mandibular_Dysglossia_Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Tratamiento_Protésico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Tratamiento_Protésico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Mandibular_Dysglossia_Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Escolar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Escolar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Disorder_Intervention_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Familiar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Familiar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Disorder_Intervention_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Logopédica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Logopédica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Disorder_Intervention_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_de_Aspectos_Prosódicos_del_Lenguaje -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_de_Aspectos_Prosódicos_del_Lenguaje">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Disfemia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_de_la_Hipertonia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_de_la_Hipertonia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Disfemia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_de_la_Respiración_y_Voz -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_de_la_Respiración_y_Voz">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Disfemia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_sobre_Paciente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_sobre_Paciente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Disfemia_Inicial_y_Episódica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervention_Strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervention_Strategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Therapy_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Labial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Labial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Labial_Dysglossia_Intervention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Labial_Dysglossia_Intervention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia_Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Laringitis_Aguda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Laringitis_Aguda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia_Orgánica_Inflamatoria"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Laringitis_Crónica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Laringitis_Crónica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Laringitis_Crónica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia_Orgánica_Inflamatoria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Laringitis_Funcional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Laringitis_Funcional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Laryngophonia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Laryngophonia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Laryngophonia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Lenguaje_Dirigido -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Lenguaje_Dirigido">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Evaluación_de_la_Articulación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Lenguaje_Espontáneo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Lenguaje_Espontáneo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Evaluación_de_la_Articulación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Lingual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Lingual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Lingual_Dysglossia_Intervention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Lingual_Dysglossia_Intervention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia_Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Mala_Impostación -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Mala_Impostación">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Laryngophonia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Mandibular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Mandibular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Mandibular_Dysglossia_Intervention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Mandibular_Dysglossia_Intervention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia_Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Manifestaciones_Corporales_y_Respiratorias -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Manifestaciones_Corporales_y_Respiratorias">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Assessment_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Manifestaciones_Típicas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Manifestaciones_Típicas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Assessment_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Medio_Técnico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Medio_Técnico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Elementos_Auxiliares"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Mixed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Mixed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphemia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Modelo_Conductual_de_Evaluación_e_Intervención -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Modelo_Conductual_de_Evaluación_e_Intervención">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Intervention_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Neurological_Etiology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Neurological_Etiology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Etiology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Obtención_de_datos_de_Cavidad_Oral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Obtención_de_datos_de_Cavidad_Oral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia_Assessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Obtención_de_datos_de_Labios -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Obtención_de_datos_de_Labios">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia_Assessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Obtención_de_datos_de_Lengua -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Obtención_de_datos_de_Lengua">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia_Assessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Obtención_de_datos_de_Maxilares -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Obtención_de_datos_de_Maxilares">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia_Assessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Obtención_de_datos_de_Paladar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Obtención_de_datos_de_Paladar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia_Assessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Organic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Organic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dyslalia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Organic_Dysphonia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Organic_Dysphonia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Organic_Etiology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Organic_Etiology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Etiology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Orientación_para_Familia_y_Profesor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Orientación_para_Familia_y_Profesor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Disfemia_Inicial_y_Episódica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Otro_Procedimiento_Terapeútico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Otro_Procedimiento_Terapeútico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Modelo_Conductual_de_Evaluación_e_Intervención"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Palatal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Palatal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Palatal_Dysglossia_Intervention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Palatal_Dysglossia_Intervention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysglossia_Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Patient">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Suffers_a"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Speech_Disorder"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Receives_therapy_from"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Therapist"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Shows_a"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Therapist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Phoneme_Use_Generalization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Phoneme_Use_Generalization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Phonetic_Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Phonetic_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Phonetic_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dyslalia_Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Psychological_Etiology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Psychological_Etiology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Etiology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Respiración -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Respiración">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Exploración_Funcional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rhinophonia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rhinophonia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rinofonía_Abierta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rinofonía_Abierta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rhinophonia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rinofonía_Cerrada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rinofonía_Cerrada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rhinophonia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Ronquera_Vocal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Ronquera_Vocal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Laryngophonia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Speech_Disorder"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_manifested_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Symptom/Sign"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Assessment_Strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Assessment_Strategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Assessment_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Intervention_Strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Intervention_Strategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervention_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Symptom/Sign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Symptom/Sign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Sin_Referencia_Visual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Sin_Referencia_Visual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Lenguaje_Dirigido"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Soplo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Soplo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Evaluación_de_la_Bases_Funcionales_de_la_Articulación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Speech_Disorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Speech_Disorder">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_manifested_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_treated_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Therapist"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Has_cause"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Etiology"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Affects_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Patient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Spluttering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Spluttering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign"/>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Acentuación_Extraña_en_las_Palabras_y_Entonación_y_Tiempo_Anormal_en_la_Oración -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Acentuación_Extraña_en_las_Palabras_y_Entonación_y_Tiempo_Anormal_en_la_Oración">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Alteración_de_la_Voz -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Alteración_de_la_Voz">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Bloqueo_de_Aire_por_Obstrucción_Nasal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Bloqueo_de_Aire_por_Obstrucción_Nasal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Cantidad_Anormal_de_Repetición_de_Segmentos,_Sílabas,_Palabras_o_Frases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Cantidad_Anormal_de_Repetición_de_Segmentos,_Sílabas,_Palabras_o_Frases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Distorsión_de_Fonemas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Distorsión_de_Fonemas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Articulation_Disorder_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Escape_de_Aire_por_Fisura_Palatina/Hipotonia_del_Velo_Palatar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Escape_de_Aire_por_Fisura_Palatina/Hipotonia_del_Velo_Palatar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Evitación_de_ciertos_Sonidos_Problemáticos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Evitación_de_ciertos_Sonidos_Problemáticos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Excesiva_Tensión_de_Cuerdas_Vocales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Excesiva_Tensión_de_Cuerdas_Vocales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Symptom/Sign"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Falta_de_Tensión_Muscular_en_Cuerdas_Vocales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Falta_de_Tensión_Muscular_en_Cuerdas_Vocales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Falta_de_Tensión_Muscular_en_Cuerdas_Vocales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Insersión_de_Fonemas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Insersión_de_Fonemas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Articulation_Disorder_Symptom/Sign"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Sustitución_de_Fonemas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Introducción_con_Fuerza_Emocional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Introducción_con_Fuerza_Emocional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Manifestación_Conductual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Manifestación_Conductual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Manifestación_Corporal_y_Respiratoria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Manifestación_Corporal_y_Respiratoria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Manifestación_Lingüística -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Manifestación_Lingüística">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Obstrucción_del_Flujo_de_Aire_por_Bloqueo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Obstrucción_del_Flujo_de_Aire_por_Bloqueo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Omisión_de_Fonemas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Omisión_de_Fonemas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Articulation_Disorder_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Palabras_sin_Terminar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Palabras_sin_Terminar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Prolongación_Anormal_de_Segmentos_de_Sonido -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Prolongación_Anormal_de_Segmentos_de_Sonido">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Pérdida_Total_de_la_Voz -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Pérdida_Total_de_la_Voz">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Sustitución_de_Fonemas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Sustitución_de_Fonemas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Articulation_Disorder_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Voz_Débil_Poco_Produnda_y_sin_Timbre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Voz_Débil_Poco_Produnda_y_sin_Timbre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Voz_Enronquecida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Voz_Enronquecida">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Voz_muy_Fuerte_sin_Timbre_y_Demasiado_Grave -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Voz_muy_Fuerte_sin_Timbre_y_Demasiado_Grave">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Voz_no_Colocada_en_Tono_Correspondiente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Voz_no_Colocada_en_Tono_Correspondiente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Therapist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Therapist">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Gives_therapy_to"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Patient"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Treats_a"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Speech_Disorder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Applies_a"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Therapy_Strategy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Therapy_Strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Therapy_Strategy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Tonic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Tonic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphemia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Técnica_de_Relajación -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Técnica_de_Relajación">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Modelo_Conductual_de_Evaluación_e_Intervención"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Disorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Disorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Speech_Disorder"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Is_manifested_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Symptom/Sign"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Disorder_Assessment_Strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Disorder_Assessment_Strategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Assessment_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Disorder_Intervention_Strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Disorder_Intervention_Strategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervention_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Symptom/Sign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Symptom/Sign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Bloqueo_de_Aire_por_Obstrucción_Nasal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Escape_de_Aire_por_Fisura_Palatina/Hipotonia_del_Velo_Palatar"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Voz_Débil_Poco_Produnda_y_sin_Timbre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Voz_Enronquecida"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Voz_muy_Fuerte_sin_Timbre_y_Demasiado_Grave"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Voz_no_Colocada_en_Tono_Correspondiente"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Acentuación_Extraña_en_las_Palabras_y_Entonación_y_Tiempo_Anormal_en_la_Oración"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Cantidad_Anormal_de_Repetición_de_Segmentos,_Sílabas,_Palabras_o_Frases"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Evitación_de_ciertos_Sonidos_Problemáticos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Introducción_con_Fuerza_Emocional"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Obstrucción_del_Flujo_de_Aire_por_Bloqueo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Palabras_sin_Terminar"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Prolongación_Anormal_de_Segmentos_de_Sonido"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia_Orgánica_Congénita"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia_Orgánica_Inflamatoria"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dysphonia_Orgánica_Traumática"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Foniátrica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Logopédica_Palatal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Ortopédica-Ortodóncica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Protésica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Quirúrgica_Palatal"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Logopédica_Mandibular"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Quirúrgica_Plástica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Intervención_Dysglossia_Tratamiento_Protésico"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Dental_Dysglossia_Intervention"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Labial_Dysglossia_Intervention"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Lingual_Dysglossia_Intervention"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Mandibular_Dysglossia_Intervention"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Palatal_Dysglossia_Intervention"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Articulation_Disorder"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Rythm_and_Fluency_Disorder"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Voice_and_Resonance_Disorder"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Distorsión_de_Fonemas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Insersión_de_Fonemas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/stephanie/ontologies/2018/0/untitled-ontology-9#Symptom/Sign_Omisión_de_Fonemas"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
